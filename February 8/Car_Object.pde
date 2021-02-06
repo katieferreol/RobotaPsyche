@@ -10,7 +10,7 @@ void draw() {
   PVector speed = new PVector(.1, 0);
   PVector friction = b1.velocity.copy();
   float c = 0.01;
-  
+
   friction.mult(-1);
   friction.normalize();
   friction.mult(c);
