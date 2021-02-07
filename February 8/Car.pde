@@ -13,53 +13,25 @@ class Car {
     topspeed = 50;
   }
 
-  void applyForce(PVector force) {
-    if (movement == true) {
-      acceleration.add(force);
-    }
+  void drive(PVector direction) {
+      acceleration.add(direction);
   }
 
   void update() {
     velocity.limit(topspeed);
     location.add(velocity);
     velocity.add(acceleration);
+    acceleration.mult(0);
   }
 
   void display() {
-    //float theta = velocity.heading();
+    float theta = velocity.heading();
     noStroke();
     pushMatrix();
-    //location.x += cos(theta);
-    //location.y += sin(theta);
     translate(location.x, location.y);
-    //rotate(theta);
+    rotate(theta);
     drawRocket();
     popMatrix();
-  }
-
-  void move() {
-    println(movement);
-    if (keyPressed) {
-      movement = true;
-      if (keyCode == LEFT) {
-        //velocity.x = 0; 
-        acceleration.x -= 1;
-      }
-      if (keyCode == RIGHT) {
-        //velocity.x = 0;
-        acceleration.x += 1;
-      }
-      if (keyCode == UP) {
-        //velocity.y = 0;
-        acceleration.y -= 1;
-      }
-      if (keyCode == DOWN) {
-        //velocity.y = 0; 
-        acceleration.y += 1;
-      }
-    } else {
-      movement = false;
-    }
   }
 
   void checkEdges() {
@@ -77,10 +49,10 @@ class Car {
 
   void drawRocket() {
     fill(255);
-    rect(30, 75, 60, 100);
+    rect(30, 75, 60, 30);
     fill(255, 0, 0);
-    triangle(30, 75, 60, 20, 90, 75);
-    triangle(90, 175, 90, 120, 120, 175);
-    triangle(0, 175, 30, 120, 30, 175);
+    triangle(30, 75, 30, 50, 60, 75);
+    triangle(90, 75, 90, 105, 120, 90);
+    triangle(60, 105, 30, 105, 30, 130);
   }
 }
