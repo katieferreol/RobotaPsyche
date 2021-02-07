@@ -66,6 +66,6 @@ Realizing this, I then created a boolean function that would tell the accelerati
 
 Now having time to add finishing touches to my work, I then added more details to my rocket such as a shadow and a window, as well as added a moving background of stars to make the rocket looks like it's truly in space.
 
-![](images/finalRocket.png)
+![](images/niceRocket.png)
 ![alt-text](images/rocketSpace.gif)
 
