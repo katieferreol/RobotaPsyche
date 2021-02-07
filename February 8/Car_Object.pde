@@ -1,31 +1,56 @@
-Car b1;
+Car rocket;
+
+PVector right = new PVector(.1, 0);
+PVector left = new PVector(-.1, 0);
+PVector up = new PVector(0, -.1);
+PVector down = new PVector(0, .1);
+PVector halt = new PVector(0, 0);
 
 void setup() {
   size(800, 800);
-  b1 = new Car();
+  rocket = new Car();
   smooth();
 }
 
 void draw() {
-  PVector speed = new PVector(.1, 0);
-  PVector friction = b1.velocity.copy();
-  float c = 0.01;
-
-  friction.mult(-1);
-  friction.normalize();
-  friction.mult(c);
-
   background(0);
-  b1.move();
-  b1.update();
-  b1.checkEdges();
-  b1.display();
-  b1.applyForce(speed);
-}
+  rocket.update();
+  rocket.checkEdges();
+  rocket.display();
 
-//void keyPressed() {
-//  b1.move(true);
-//}
-//void keyReleased() {
-//  b1.move(false);
-//}
+  if (key == CODED && keyPressed == true) {
+    if (keyCode == RIGHT) {
+
+      rocket.drive(right);
+    }
+    if (keyCode == LEFT) {
+
+      rocket.drive(left);
+    }
+    if (keyCode == UP) {
+      rocket.drive(up);
+    }
+    if (keyCode == DOWN) {
+      rocket.drive(down);
+    }
+  }
+
+  if (keyPressed == false) {
+
+    float c = 0.0091;
+    float normal = 1;
+    float stopMag = c*normal;
+    PVector stop = rocket.velocity.copy();
+    stop.normalize();
+    stop.mult(stopMag);
+    println(stop);
+    
+    if (stop.z == -0.0) {
+      stop.mult(-1);
+    } else if (stop.z == 0.0) {
+      stop.mult(-1);
+    }
+    
+    rocket.drive(stop);
+  }
+}
