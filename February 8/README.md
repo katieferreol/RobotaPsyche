@@ -18,7 +18,7 @@ Although this seemed to be a fairly simple assignment, the various factors that 
 
 After inputting the arrow key detection function, what was needed was to make the rocket face the proper direction. However, this did not end up being successful for me, as it would turn in various directions as I was simply reflecting the drawing instead of rotating it.
 
-![](images/unrealMovement.png)
+![alt-text](images/unrealMove.gif)
 
 In addition, after adding the acceleration function, I tried commenting out *acceleration.mult(0)*, as the instructions said it should get faster the longer your press the key. However, this led to my rocket never being able to stop.
 
@@ -26,7 +26,7 @@ In addition, after adding the acceleration function, I tried commenting out *acc
 
 After getting feedback from Professor that we had to use the rotate function, I studied how to make it look realistic and tried to make it turn as I pressed left or right. Though slightly successful, I had to use constraints for the angles so it would properly face the right or left. I knew there was an easier way to do this.
 
-![](images/unrealRotate.png)
+![alt-text](images/unrealRotate.gif)
 
     void display() {
         if (rightDirection == true) {
