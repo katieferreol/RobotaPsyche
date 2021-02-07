@@ -1,73 +1,71 @@
 # ROBOTA PSYCHE ASSIGNMENT 1: Moving Rocket Arrow Keys
 
-My final project will make use of a Piezo buzzer, a potentiometer, and three buttons that communicate to Processing to make a Flappy Bird game with an additional Customization Page that communicates Arduino to Processing.
+My project for this week made use of a rocketship drawn on Processing, that detects pressing of the arrow keys to move and rotate in a realistic fashion using velocity, acceleration, and friction.
 
 ## PROCESS
 
-My inspiration for this product was through the Piezo buzzer. I noticed that most of the songs produced on there eminated quite an 8-bit sound, so I wanted my game to embody that as well just to make it well rounded. I first wanted to do Pacman, which I started for the first few days, but it was a bit too difficult as you would need many constraints for the maze. 
+When first starting off, I had to create a rough version of what the rocketship would look like. Although using images would have made it look nicer, I stuck to using Processing shapes to show my effort. I made the tails and top red, while adding a white middle.
 
-![](images/pacmansheet.png)
+![](images/initialRocket.png)
 
-Thankfully, I was able to come across an old game that I played back in 2015, Flappy Bird. Due to it being discountinued, this actually incentivized me more to bring it back to life through Processing and Arduino. I was able to find the image assets through [this Spriters Resource link.](https://www.spriters-resource.com/mobile/flappybird/sheet/59537/)
-
-![](images/assets.png)
+After this was finished, it was time to get coding.
 
 ## SETBACKS
 
-### Collision Detection
+Although this seemed to be a fairly simple assignment, the various factors that affect the rocket's movement is more than what I thought. I ended up spending three whole days working on this project from start to making this documentation. Some of my setbacks are as follows:
 
-I had quite a hard time coding the constraints of the pipes, as I realized there is no such thing as image collision detection in Processing. Therefore, my solution was to create an area using a rectangle that fit the space in between the pipes, and measure that distance as being passable. I had to do this for the pipes as well to trigger the lose function.
+### Movement
 
-![](images/passarea.png)
+After inputting the arrow key detection function, what was needed was to make the rocket face the proper direction. However, this did not end up being successful for me, as it would turn in various directions as I was simply reflecting the drawing instead of rotating it.
 
-After I knew this was working, I removed the fill and stroke of both. Then, I used the print() function to make sure that it was doing its job, with it printing "PASS" if it passes the pipe or "FAIL" if it hits the pipe.
+![](images/unrealMovement.png)
 
-![alt-text](images/birdmove2.gif)
+In addition, after adding the acceleration function, I tried commenting out *acceleration.mult(0)*, as the instructions said it should get faster the longer your press the key. However, this led to my rocket never being able to stop.
 
-However, this wasn't working all the time, so I decided to invest a full day in starting from scratch and creating new constraints and making sure it is working every time the bird hits a pipe.
+### Rotation
 
-![alt-text](images/smoothpipes.gif)
+After getting feedback from Professor that we had to use the rotate function, I studied how to make it look realistic and tried to make it turn as I pressed left or right. Though slightly successful, I had to use constraints for the angles so it would properly face the right or left. I knew there was an easier way to do this.
 
-### Realistic Bird Movement
+![](images/unrealRotate.png)
 
-After this, another problem I was able to solve was getting the bird to move more like it's jumping. In the original version of Flappy Bird, whenever the bird jumps, it mimics a person jumping. However, for me, it was only floating, making it seem easier. I was finally able to look at how to mimic this by creating velocity and gravity functions to the bird.
-
-OLD:
-
-![alt-text](images/birdmove1.gif)
-
-NEW (simple version):
-
-![alt-text](images/ballmove.gif)
-
-### Button State-Reading
-
-A problem I was having was making the buttons not PUSH-buttons, but STATE-buttons, meaning it would turn on when I press it once and turn off if I press it again. This was quite hard to do, as the tutorials I found made use of only one button. This meant my buttons would only change their state if the other two were off.
-
-![alt-text](images/serial1.gif)
-
-However, I was able to get it to work using a code that I refined to make it work for all three buttons:
-
-    if (yellowPush % 2 == 1) {
-          yellowPush = 0;
-          val2 = 0;
+    void display() {
+        if (rightDirection == true) {
+        rotate(velocity.heading()+90);
+        } else if (leftDirection == true) {
+        rotate(velocity.heading()-90);
         }
-        if ((redPush % 2 == 1)) {
-          redPush = 0;
-          val2 = 1;
-        }
-        if (bluePush % 2 == 1) {
-          bluePush = 0;
-          val2 = 2;
-        }
+      }
 
-### Processing-Arduino Communication
+After getting help from my classmates, I found the solution to both the movement and rotation problem, which was to put the arrow detection function inside the *DRAW* function instead of inside the *CLASS*. This was very interesting to me because we didn't do that in class. Now, my rocket was looking more realistic.
 
-Lastly, a problem I was having was regarding my Piezo buzzer: even though Processing was printing that the bird passed the pipes and the player's score would increase, it wouldn't play the 1-UP sound effect. I thought this was a problem with the buzzer itself.
+![alt-text](images/realRotate.gif)
 
-However, having a talk with Professor, I realized that this was due to me serial reading an Arduino variable that _Arduino_ sends values to, even if thats not necessary because I only need to read the Processing variables.
+### Slowing Down and Stopping
 
-![](images/discordconvo.png)
+There was still one more problem I could not fix: stopping the rocket completely. My classmate and I both struggled with the object glitching when in a completely zero state.
 
-## FINAL
+![alt-text](images/rocketGlitch.gif)
+
+After getting feedback from Professor that it may be due to not having a completely zero acceleration, I tried printing every vector that affected acceleration. Low and behold, the friction function was the one causing it, as it multiplies a value added to acceleration by (-1).
+
+![](images/professorRemark.png)
+![](images/accelerationPosNeg.png)
+
+Realizing this, I then created a boolean function that would tell the acceleration to only add the direction if the key is pressed. If not, then it triggers the friction function. Though this was slightly successful, the rocket now still keeps on moving, but very minimally. Unfortunately, this is not something I was able to fix, but Professor said it was okay because rockets constantly move in space anyway. Yay!
+
+      if (keyPressed == false) {
+        move = false;
+        PVector stop = rocket.velocity.copy();
+        stop.mult(-1);
+        stop.normalize();
+        stop.mult(0.1);
+        rocket.drive(stop);
+      }
+
+## FINAL TOUCHES
+
+Now having time to add finishing touches to my work, I then added more details to my rocket such as a shadow and a window, as well as added a moving background of stars to make the rocket looks like it's truly in space.
+
+![](images/finalRocket.png)
+![alt-text](images/rocketSpace.gif)
 
