@@ -1,9 +1,11 @@
+//STAR CLASS
+
 class Star {
   float x = random(-800, -50);
   float y = random(height);
   float xspeed = random(5, 10);
 
-  //makes stars move from left to right
+  //Makes stars move from left to right
   void fall() {
     x = x + xspeed;
     if (x > width) {
@@ -11,10 +13,9 @@ class Star {
     }
   }
 
-  //makes stars appear or disappear
+  //Mkes stars appear or disappear
   void show() {
-    //using ellipse
     fill(255);
-    ellipse(x, y, 10, 10);
+    ellipse(x, y, 15, 15);
   }
 }
