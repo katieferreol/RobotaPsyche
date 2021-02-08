@@ -1,7 +1,7 @@
 //Katie Ferreol Assignment 1: Rocket Arrow Keys
 //Instructions: Use the arrow keys to see the rocketship fly!
 
-//Inputting stars
+//Inputting stars and rocket
 Star[] stars = new Star [10];
 Rocket rocket;
 
@@ -44,7 +44,6 @@ void draw() {
   if (keyPressed == true) {
     move = true;
     if (keyCode == RIGHT) {
-
       rocket.drive(right);
     }
     if (keyCode == LEFT) {
@@ -62,12 +61,5 @@ void draw() {
   //If no key is pressed, no acceleration and rocket will slow down
   if (keyPressed == false) {
     move = false;
-
-    PVector stop = rocket.velocity.copy();
-    stop.mult(-1);
-    stop.normalize();
-    stop.mult(0.1);
-
-    rocket.drive(stop);
   }
 }
