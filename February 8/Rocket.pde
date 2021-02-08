@@ -20,7 +20,6 @@ class Rocket {
     if (move == true) {
       acceleration.add(direction);
     }
-    println(acceleration);
   }
 
   //updating acceleration every time you draw
