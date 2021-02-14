@@ -17,7 +17,7 @@ Deciding this was my idea of choice, it was time to get coding. However, this wa
 
 ## SETBACKS
 
-### Movement
+### 1. Movement
 
 Because we didn't specifically learn how to make an array of vehicles follow the mouse in a realistic, lifelike fashion, I spent a few hours looking over codes and projects that would help me. After finding a fairly simple one asking about the direction of arrows based on the mouse direction, I based my project off of that.
 
@@ -25,7 +25,7 @@ Because we didn't specifically learn how to make an array of vehicles follow the
 
 However, soon scrapping this idea, I began to make use of Professor's code to show a triangle randomly moving across the screen. Deciding to play with this by changing the background color and increasing the amount of vehicles, it reminded me highly of a bunch of ants walking across their anthill. I decided to base my project on this scenario.
 
-### Goal Orientation
+### 2. Goal Orientation
 
 After choosing my topic, I didn't want to just make it a bunch of ants walking around the screen with no clear goal. I then remembered that the reason ants pop up in places are due to food laying around. I decided to go with adding a burger and make the ants walk to it.
 
@@ -35,26 +35,26 @@ Because I got inspiration from another code that made use of particles in an eas
 
 ![alt-text](images/antmove1.gif)
 
-### Realistic and Constant Movement
+### 3. Realistic and Constant Movement
 
 After getting the goal orientation down, I didn't want the ants to merely go to one place, as they merely disappear and don't crowd around the burger as I would have liked. Because of this, I decided to make the postion of the burger be relative to the mouse's location and have the ants move accordingly.
 
 I had a hard time making the ants move at first, but it was because I was declaring the mouse vector inside setup() instead of draw(), not allowing it to update.
 
-### Appearance of Ant
+### 4. Appearance of Ant
 
 I tried different appearances for my ant, such as changing the color from dark red to bright red, changing the line to an ellipse, and even making it a real png file of an ant (which failed miserably because it caused it to lag so much). In the end, I just stook with the dark red lines.
 
 ![](images/uglyants.png)
 ![](images/ant.png)
 
-### Ants Coming to One Location
+### 5. Ants Coming to One Location
 
 Weirdly, when I move the burger around enough, the ants begin to move in one uniform line, and ultimately in one uniform location, making it look like they're just one ant. This was not something i was able to fix, unfortunately, but the presence of an arraylist on mouseclick changed it greatly.
 
 ![alt-text](images/oneant.gif)
 
-### Changing from Array to Array List
+### 6. Changing from Array to Array List
 
 Because I only realized late that we had to make our vehicles appear in an array list, I ended up taking some time to change my code to fit an array list instead of an array. The biggest change is that, instead of all the ants appearing once the program loads, you have to trigger them with a mouse click, which makes them appear in a random location. Weirdly also, Processing didn't allow me to run a vector inside of a particle, even though that was what was shown in the Dan Shiffman website:
 
