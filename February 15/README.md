@@ -1,70 +1,69 @@
-# ROBOTA PSYCHE ASSIGNMENT 1: Moving Rocket Arrow Keys
+# ROBOTA PSYCHE ASSIGNMENT 2: Burger-Ant Flow Field
 
-My project for this week made use of a rocketship drawn on Processing, that detects pressing of the arrow keys to move and rotate in a realistic fashion using velocity, acceleration, and friction.
+My project for this week mader use of a flow field to visualize a hoard of ants following the scent of a left out burger, using PVector array lists and seeking the location of the "burger", which was the mouse.
 
 ## PROCESS
 
-When first starting off, I had to create a rough version of what the rocketship would look like. Although using images would have made it look nicer, I stuck to using Processing shapes to show my effort. I made the tails and top red, while adding a white middle.
+When first starting the project, I was not sure of what behavior out of the ones I suggested I wanted to do. Just from researching on Google alone, I thought about doing a bunch of vectors creating an avant-garde version of an image, but I figured that would be too difficult considering the knowledge I have.
 
-![](images/initialRocket.png)
+![](images/flowfieldpic1.jpg)
+![](images/flowfieldpic2.jpg)
 
-After this was finished, it was time to get coding.
+Thinking about the behaviors I came up with last class, what attracted to me was a flow field used to look for your phone by just following the noise. This led me to searching projects related to this. This is what led me to a [video](https://www.youtube.com/watch?v=Bspb9g9nTto&ab_channel=Tuts%2BGameDevelopment) describing what is called "goal-based vector field pathfinding", wherein we dictate a specific location to a bunch of vehicles to go.
+
+![alt-text](images/inspo.gif)
+
+Deciding this was my idea of choice, it was time to get coding. However, this was harder than I thought.
 
 ## SETBACKS
 
-Although this seemed to be a fairly simple assignment, the various factors that affect the rocket's movement is more than what I thought. I ended up spending three whole days working on this project from start to making this documentation. Some of my setbacks are as follows:
-
 ### Movement
 
-After inputting the arrow key detection function, what was needed was to make the rocket face the proper direction. However, this did not end up being successful for me, as it would turn in various directions as I was simply reflecting the drawing instead of rotating it.
+Because we didn't specifically learn how to make an array of vehicles follow the mouse in a realistic, lifelike fashion, I spent a few hours looking over codes and projects that would help me. After finding a fairly simple one asking about the direction of arrows based on the mouse direction, I based my project off of that.
 
-![alt-text](images/unrealMove.gif)
+![alt-text](images/arrows.gif)
 
-In addition, after adding the acceleration function, I tried commenting out *acceleration.mult(0)*, as the instructions said it should get faster the longer your press the key. However, this led to my rocket never being able to stop.
+However, soon scrapping this idea, I began to make use of Professor's code to show a triangle randomly moving across the screen. Deciding to play with this by changing the background color and increasing the amount of vehicles, it reminded me highly of a bunch of ants walking across their anthill. I decided to base my project on this scenario.
 
-### Rotation
+### Goal Orientation
 
-After getting feedback from Professor that we had to use the rotate function, I studied how to make it look realistic and tried to make it turn as I pressed left or right. Though slightly successful, I had to use constraints for the angles so it would properly face the right or left. I knew there was an easier way to do this.
+After choosing my topic, I didn't want to just make it a bunch of ants walking around the screen with no clear goal. I then remembered that the reason ants pop up in places are due to food laying around. I decided to go with adding a burger and make the ants walk to it.
 
-![alt-text](images/unrealRotate.gif)
+![](data/burger.png)
 
-    void display() {
-        if (rightDirection == true) {
-        rotate(velocity.heading()+90);
-        } else if (leftDirection == true) {
-        rotate(velocity.heading()-90);
-        }
+Because I got inspiration from another code that made use of particles in an easier way, it took time for me to add the seek function as I had to change it accordingly. The ants are a bunch of lines with a thick stroke.
+
+![alt-text](images/antmove1.gif)
+
+### Realistic and Constant Movement
+
+After getting the goal orientation down, I didn't want the ants to merely go to one place, as they merely disappear and don't crowd around the burger as I would have liked. Because of this, I decided to make the postion of the burger be relative to the mouse's location and have the ants move accordingly.
+
+I had a hard time making the ants move at first, but it was because I was declaring the mouse vector inside setup() instead of draw(), not allowing it to update.
+
+### Appearance of Ant
+
+I tried different appearances for my ant, such as changing the color from dark red to bright red, changing the line to an ellipse, and even making it a real png file of an ant (which failed miserably because it caused it to lag so much). In the end, I just stook with the dark red lines.
+
+![](images/uglyants.png)
+![](images/ant.png)
+
+### Ants Coming to One Location
+
+Weirdly, when I move the burger around enough, the ants begin to move in one uniform line, and ultimately in one uniform location, making it look like they're just one ant. This was not something i was able to fix, unfortunately, but the presence of an arraylist on mouseclick changed it greatly.
+
+![alt-text](images/oneant.gif)
+
+### Changing from Array to Array List
+
+Because I only realized late that we had to make our vehicles appear in an array list, I ended up taking some time to change my code to fit an array list instead of an array. The biggest change is that, instead of all the ants appearing once the program loads, you have to trigger them with a mouse click, which makes them appear in a random location. Weirdly also, Processing didn't allow me to run a vector inside of a particle, even though that was what was shown in the Dan Shiffman website:
+
+    for (int i = 0; i < 10; i++) {
+        myVectors.add(new PVector(i, 0));
       }
 
-After getting help from my classmates, I found the solution to both the movement and rotation problem, which was to put the arrow detection function inside the *DRAW* function instead of inside the *CLASS*. This was very interesting to me because we didn't do that in class. Now, my rocket was looking more realistic.
+## FINAL
 
-![alt-text](images/realRotate.gif)
+Finally, my project is done! The final gif of the program (slightly sped up for the purpose of turning the video into a gif file) is below:
 
-### Slowing Down and Stopping
-
-There was still one more problem I could not fix: stopping the rocket completely. My classmate and I both struggled with the object glitching when in a completely zero state.
-
-![alt-text](images/rocketGlitch.gif)
-
-After getting feedback from Professor that it may be due to not having a completely zero acceleration, I tried printing every vector that affected acceleration. Low and behold, the friction function was the one causing it, as it multiplies a value added to acceleration by (-1).
-
-![](images/professorRemark.png)
-![](images/accelerationPosNeg.png)
-
-Realizing this, I then created a boolean function that would tell the acceleration to only add the direction if the key is pressed. If not, then it triggers the friction function. Though this was slightly successful, the rocket now still keeps on moving, but very minimally. Unfortunately, this is not something I was able to fix, but Professor said it was okay because rockets constantly move in space anyway. Yay!
-
-      if (keyPressed == false) {
-        move = false;
-        PVector stop = rocket.velocity.copy();
-        stop.mult(-1);
-        stop.normalize();
-        stop.mult(0.1);
-        rocket.drive(stop);
-      }
-
-## FINAL TOUCHES
-
-Now having time to add finishing touches to my work, I then added more details to my rocket such as a shadow and a window, as well as added a moving background of stars to make the rocket looks like it's truly in space.
-
-![](images/niceRocket.png)
-![alt-text](images/rocketSpace.gif)
+![alt-text](images/final.gif)
