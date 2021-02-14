@@ -6,8 +6,8 @@ My project for this week mader use of a flow field to visualize a hoard of ants 
 
 When first starting the project, I was not sure of what behavior out of the ones I suggested I wanted to do. Just from researching on Google alone, I thought about doing a bunch of vectors creating an avant-garde version of an image, but I figured that would be too difficult considering the knowledge I have.
 
-![](images/flowfieldpic1.jpg)
-![](images/flowfieldpic2.jpg)
+![](images/flowfield1.jpg)
+![](images/flowfield2.jpg)
 
 Thinking about the behaviors I came up with last class, what attracted to me was a flow field used to look for your phone by just following the noise. This led me to searching projects related to this. This is what led me to a [video](https://www.youtube.com/watch?v=Bspb9g9nTto&ab_channel=Tuts%2BGameDevelopment) describing what is called "goal-based vector field pathfinding", wherein we dictate a specific location to a bunch of vehicles to go.
 
