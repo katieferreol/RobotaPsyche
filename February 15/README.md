@@ -56,11 +56,14 @@ Weirdly, when I move the burger around enough, the ants begin to move in one uni
 
 ### 6. Changing from Array to Array List
 
-Because I only realized late that we had to make our vehicles appear in an array list, I ended up taking some time to change my code to fit an array list instead of an array. The biggest change is that, instead of all the ants appearing once the program loads, you have to trigger them with a mouse click, which makes them appear in a random location. Weirdly also, Processing didn't allow me to run a vector inside of a particle, even though that was what was shown in the Dan Shiffman website:
+Because I only realized late that we had to make our vehicles appear in an array list, I ended up taking some time to change my code to fit an array list instead of an array. 
+
+The biggest change is that, instead of all the ants appearing once the program loads, you have to trigger them with a mouse click, which makes them appear in a random location. Weirdly also, Processing didn't allow me to run a vector inside of a particle, even though that was what was shown in the Dan Shiffman website:
 
     for (int i = 0; i < 10; i++) {
         myVectors.add(new PVector(i, 0));
       }
+After I got it to work, however, I was very happy because it looked a lot more realistic, as it looks like the ants are emerging from the sand.
 
 ## FINAL
 
