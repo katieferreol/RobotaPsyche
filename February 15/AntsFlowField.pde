@@ -131,10 +131,11 @@ void draw()
   for (int i = 0; i < particles.size(); i++) {
     Particle p = particles.get(i);
     p.follow(flowField);
+    p.seek(newmouse);
     p.update();
 
     //making ants look for the "burger" (mouse)
-    p.seek(newmouse);
+    //p.seek(newmouse);
     p.show();
   }
 
