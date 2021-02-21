@@ -86,7 +86,7 @@ I'm not sure why, but my separate function doesn’t work! It gives me an error 
 
 ### 6. Making the Fishes Eat Each Other
 
-I wanted the code to make it so that when a small fish is in contact with big fish it dies. However, because I need the size to apply the if() function, I couldn't do this because I can’t access size variable in the DNA class in the Particle class. I thought I could store the size variable from the DNA class into something in the Particle class, but it wasn’t possible.
+I wanted the code to make it so that when a small fish is in contact with big fish it dies. However, because I need the size to apply the if() function, I couldn't do this because I can’t access size variable in the DNA class in the Particle class. I thought I could store the size variable from the DNA class into something in the Particle class, but it wasn’t possible. In addition, **how would you be able to calculate the distance between two particles which come from the same class? How would Processing be able to specify which fish you're talking about?**
 
 ![](images/fisheat.png)
 
