@@ -1,73 +1,93 @@
-# ROBOTA PSYCHE ASSIGNMENT 2: Burger-Ant Flow Field
+# ROBOTA PSYCHE ASSIGNMENT 3: Sea of Fishes Behavior
 
-My project for this week mader use of a flow field to visualize a hoard of ants following the scent of a left out burger, using PVector array lists and seeking the location of the "burger", which was the mouse.
+For this assignment, we were instructed to start implementing forms of DNA and behaviors that will cause adding and subtracting of multiple vehicles. My code, though not doing implementing the behaviors I want yet, creates a lively sea of fish (different colors and sizes) moving in random directions. I want to code it so that, when a small fish comes in close contact with it predator, it will disappear, and when it comes close to a similar fish, will reproduce another fish of that species.
+
+![alt-text](images/seafish.gif)
 
 ## PROCESS
 
-When first starting the project, I was not sure of what behavior out of the ones I suggested I wanted to do. Just from researching on Google alone, I thought about doing a bunch of vectors creating an avant-garde version of an image, but I figured that would be too difficult considering the knowledge I have.
-
-![](images/flowfield1.jpg)
-![](images/flowfield2.jpg)
-
-Thinking about the behaviors I came up with last class, what attracted to me was a flow field used to look for your phone by just following the noise. This led me to searching projects related to this. This is what led me to a [video](https://www.youtube.com/watch?v=Bspb9g9nTto&ab_channel=Tuts%2BGameDevelopment) describing what is called "goal-based vector field pathfinding", wherein we dictate a specific location to a bunch of vehicles to go.
-
-![alt-text](images/inspo.gif)
-
-Deciding this was my idea of choice, it was time to get coding. However, this was harder than I thought.
+Because I thought that I would continue using my ant hill example, I wanted to develop my previous code. Pullling it up, I realized that I had to change a lot of the structure due to my new use of the expanded Arraylist. This assignment was quite difficult due to me not completely understanding the concept. I have quite a few setbacks that occured with coding this, the farthest I got was changing the size and color using the getDNA() function.
 
 ## SETBACKS
 
-### 1. Movement
+### 1. DNA Class
 
-Because we didn't specifically learn how to make an array of vehicles follow the mouse in a realistic, lifelike fashion, I spent a few hours looking over codes and projects that would help me. After finding a fairly simple one asking about the direction of arrows based on the mouse direction, I based my project off of that.
+Creating the DNA class was already a difficult task, as I never had to implement different colors and sizes to particles in the same class. I first started off using an array of numbers that would pertain to size and color. Later on did I realize this wasn't necessary and just used normal int and color variables.
 
-![alt-text](images/arrows.gif)
+    class DNA {
+     int[] size = new int[100];
+     color[] colors = new color[100];
 
-However, soon scrapping this idea, I began to make use of Professor's code to show a triangle randomly moving across the screen. Deciding to play with this by changing the background color and increasing the amount of vehicles, it reminded me highly of a bunch of ants walking across their anthill. I decided to base my project on this scenario.
+      DNA() {
+        for (int i = 0; i < size.length; i++) {
+          size[i] = int(random(0,50));
+        }
 
-### 2. Goal Orientation
-
-After choosing my topic, I didn't want to just make it a bunch of ants walking around the screen with no clear goal. I then remembered that the reason ants pop up in places are due to food laying around. I decided to go with adding a burger and make the ants walk to it.
-
-![](data/burger.png)
-
-Because I got inspiration from another code that made use of particles in an easier way, it took time for me to add the seek function as I had to change it accordingly. The ants are a bunch of lines with a thick stroke.
-
-![alt-text](images/antmove1.gif)
-
-### 3. Realistic and Constant Movement
-
-After getting the goal orientation down, I didn't want the ants to merely go to one place, as they merely disappear and don't crowd around the burger as I would have liked. Because of this, I decided to make the postion of the burger be relative to the mouse's location and have the ants move accordingly.
-
-I had a hard time making the ants move at first, but it was because I was declaring the mouse vector inside setup() instead of draw(), not allowing it to update.
-
-### 4. Appearance of Ant
-
-I tried different appearances for my ant, such as changing the color from dark red to bright red, changing the line to an ellipse, and even making it a real png file of an ant (which failed miserably because it caused it to lag so much). In the end, I just stook with the dark red lines.
-
-![](images/uglyants.png)
-![](images/ant.png)
-
-### 5. Ants Coming to One Location
-
-Weirdly, when I move the burger around enough, the ants begin to move in one uniform line, and ultimately in one uniform location, making it look like they're just one ant. This was not something i was able to fix, unfortunately, but the presence of an arraylist on mouseclick changed it greatly.
-
-![alt-text](images/oneant.gif)
-
-### 6. Changing from Array to Array List
-
-Because I only realized late that we had to make our vehicles appear in an array list, I ended up taking some time to change my code to fit an array list instead of an array. 
-
-The biggest change is that, instead of all the ants appearing once the program loads, you have to trigger them with a mouse click, which makes them appear in a random location. Weirdly also, Processing didn't allow me to run a vector inside of a particle, even though that was what was shown in the Dan Shiffman website:
-
-    for (int i = 0; i < 10; i++) {
-        myVectors.add(new PVector(i, 0));
+      for (int i = 0; i < colors.length; i++) {
+          colors[i] = int(random(0,255));
+        }
       }
-After I got it to work, however, I was very happy because it looked a lot more realistic, as it looks like the ants are emerging from the sand.
+    }
 
-## FINAL
+### 2. Using DNA Variables in Particle Class
 
-Finally, my project is done! The final gif of the program (slightly sped up for the purpose of turning the video into a gif file) is below:
+However, even after figuring this out, I didn’t know how use getDNA() function in Particle class if all the variables are in DNA class. After researching about it, I stumbled upon this [link](https://discourse.processing.org/t/get-class-variables-from-another-class/14866/6) about using public classes and accessing functions from a different class. After using this, it started working the way I wanted to.
 
-![alt-text](images/final.gif)
+    void getSize() {
+        println(size);
+      }
 
+      void getColor() {
+        println(colors);
+      }
+    }
+
+![](images/newsizesbw.png)
+
+I then realized that all my particles were in black and white, which may have been cause by me using 3 different variables for RGB instead of using a color funciton. Realizing this, I did this and it became multicolored.
+
+![](images/newsizescolor.png)
+
+In addition, I also wanted to stop making the particles follow the mouse, so I settled for the random movement instead.
+
+### 3. Changing the Theme
+
+I don't know why, but the particles reminded me of fish, leading me to want to change the anthill to a sea. After getting everything to work properly, I began changing the theme to what I wanted.
+
+![](images/background.png)
+
+Because I wanted to make this like an ecosystem, I coded the color of the particles to be a certain color depending on their size (green for sizes 5-10, etc.).
+
+    size = int(random(5, 30));
+        if (size < 15 && size >= 5) {
+          colors = color(154, 205, 50);
+        }
+
+This was inspired by the concept of the food chain in bodies of water: the small particles would become plankton, the orange particles were small fish, the grey fish become makerel, and the blue particles are sharks.
+
+![](images/foodchain.jpg)
+
+### 4. Making Particles Look Like A Fish
+
+Because this was a sea, I didn't want the fish to just look like a bunch of circles, which was something I could get away with for the anthill because ants are small. I first tried using Processing shapes like triangles; however, I wasn't really sure to do this. As a result, my canvas turned out looking like a firework, which could be nice as an art project but not something I was looking for right now.
+
+![](images/trianglefail.png)
+
+I was also thinking about using a PNG file of a fish, however remembering from previous assignments, using a picture slows down the program by a lot, so I can't imagine having to use 100 of the same PNG file. 
+
+![](images/fish.png)
+
+### 5. Using 'Separate' and 'Apply Behavior' Function
+
+I'm not sure why, but my separate function doesn’t work! It gives me an error that "Type mismatch, "void" does not match with "processing.core.PVector"". Thinking that this was due to the function being a void instead of a PVector, I tried changing separate into a PVector instead of a void, but it didn't work either. It would give me "This method must return a result of type PVector". As a result, I also couldn't use the "Apply Vector" function.
+
+### 6. Making the Fishes Eat Each Other
+
+I wanted the code to make it so that when a small fish is in contact with big fish it dies. However, because I need the size to apply the if() function, I couldn't do this because I can’t access size variable in the DNA class in the Particle class. I thought I could store the size variable from the DNA class into something in the Particle class, but it wasn’t possible.
+
+
+## FINAL AND GOALS FOR THE FUTURE
+
+What I was able to do so far is in the gif below, where I was only able to mass-apply the different sizes and shapes to the 100 particles present, as well as make them move in different directions. My goal for the future is to make it so that the small fishes get eaten by their respective predator, and reproduce when in close contact with a similar fish. 
+
+![alt-text](images/seafish.gif)
