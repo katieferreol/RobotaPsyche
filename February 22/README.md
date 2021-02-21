@@ -56,10 +56,18 @@ I don't know why, but the particles reminded me of fish, leading me to want to c
 
 Because I wanted to make this like an ecosystem, I coded the color of the particles to be a certain color depending on their size (green for sizes 5-10, etc.).
 
-    size = int(random(5, 30));
-        if (size < 15 && size >= 5) {
-          colors = color(154, 205, 50);
-        }
+       void getSize() {
+    strokeWeight(size);
+      }
+
+      void getColor() {
+        stroke(colors);
+      }
+
+      void getDNA() {
+        gene.getSize();
+        gene.getColor();
+      }
 
 This was inspired by the concept of the food chain in bodies of water: the small particles would become plankton, the orange particles were small fish, the grey fish become makerel, and the blue particles are sharks.
 
