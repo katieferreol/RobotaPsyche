@@ -44,11 +44,9 @@ However, even after figuring this out, I didn’t know how use getDNA() function
 
 ![](images/newsizesbw.png)
 
-I then realized that all my particles were in black and white, which may have been cause by me using 3 different variables for RGB instead of using a color funciton. Realizing this, I did this and it became multicolored.
+I then realized that all my particles were in black and white, which may have been cause by me using 3 different variables for RGB instead of using a color funciton. Realizing this, I did this and it became multicolored. In addition, I also wanted to stop making the particles follow the mouse, so I settled for the random movement instead.
 
-![](images/newsizescolor.png)
-
-In addition, I also wanted to stop making the particles follow the mouse, so I settled for the random movement instead.
+![alt-text](images/colorsizerandom.gif)
 
 ### 3. Changing the Theme
 
