@@ -33,14 +33,18 @@ Creating the DNA class was already a difficult task, as I never had to implement
 
 However, even after figuring this out, I didn’t know how use getDNA() function in Particle class if all the variables are in DNA class. After researching about it, I stumbled upon this [link](https://discourse.processing.org/t/get-class-variables-from-another-class/14866/6) about using public classes and accessing functions from a different class. After using this, it started working the way I wanted to.
 
-    void getSize() {
-        println(size);
+     void getSize() {
+    strokeWeight(size);
       }
 
       void getColor() {
-        println(colors);
+        stroke(colors);
       }
-    }
+
+      void getDNA() {
+        gene.getSize();
+        gene.getColor();
+      }
 
 ![](images/newsizesbw.png)
 
@@ -56,18 +60,11 @@ I don't know why, but the particles reminded me of fish, leading me to want to c
 
 Because I wanted to make this like an ecosystem, I coded the color of the particles to be a certain color depending on their size (green for sizes 5-10, etc.).
 
-       void getSize() {
-    strokeWeight(size);
-      }
-
-      void getColor() {
-        stroke(colors);
-      }
-
-      void getDNA() {
-        gene.getSize();
-        gene.getColor();
-      }
+      size = int(random(5, 30));
+    if (size < 15 && size >= 5) {
+      colors = color(154, 205, 50);
+      foodchain = 0;
+    }
 
 This was inspired by the concept of the food chain in bodies of water: the small particles would become plankton, the orange particles were small fish, the grey fish become makerel, and the blue particles are sharks.
 
