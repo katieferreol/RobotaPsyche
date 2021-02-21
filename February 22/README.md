@@ -95,3 +95,11 @@ I wanted the code to make it so that when a small fish is in contact with big fi
 What I was able to do so far is in the gif below, where I was only able to mass-apply the different sizes and shapes to the 100 particles present, as well as make them move in different directions. My goal for the future is to make it so that the small fishes get eaten by their respective predator, and reproduce when in close contact with a similar fish. 
 
 ![alt-text](images/seafish.gif)
+
+## UPDATE ON FINAL PRODUCT
+
+In an impulse, I decided to rework some of my code to make it look more like fish. I finally used pictures from a vector I found on Google, and made it so that the specific picture shown would be scaled by a specific value to make them look different from one another (some smaller, some bigger). I also changed the background to make it look more cartoon than realistic.
+
+![](images/fishes.png)
+
+![alt-text](images/final.gif)
