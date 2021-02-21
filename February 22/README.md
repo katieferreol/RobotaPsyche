@@ -83,6 +83,7 @@ I'm not sure why, but my separate function doesn’t work! It gives me an error 
 
 I wanted the code to make it so that when a small fish is in contact with big fish it dies. However, because I need the size to apply the if() function, I couldn't do this because I can’t access size variable in the DNA class in the Particle class. I thought I could store the size variable from the DNA class into something in the Particle class, but it wasn’t possible.
 
+![](images/fisheat.png)
 
 ## FINAL AND GOALS FOR THE FUTURE
 
