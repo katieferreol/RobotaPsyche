@@ -1,33 +1,39 @@
 class DNA {
-  int size;
-  color colors;
-  int foodchain;
+  float size;
+  float speed;
+  int fishnumber = int(random(4));
+  PImage[] fishes;
 
   DNA() {
-    size = int(random(5, 30));
-    if (size < 15 && size >= 5) {
-      colors = color(154, 205, 50);
-      foodchain = 0;
-    }
-    if (size < 20 && size >= 15) {
-      colors = color(255, 140, 0);
-      foodchain = 1;
-    }
-    if (size < 25 && size >= 20) {
-      colors = color(220, 220, 220);
-      foodchain = 2;
-    }
-    if (size <= 30 && size >= 25) {
-      colors = color(65, 105, 225);
-      foodchain = 3;
+    fishes = new PImage[4];
+    for (int i = 0; i < 4; i++) {
+      fishes[i] = loadImage("fish"+ i +".png");
     }
   }
 
-  void getSize() {
-    strokeWeight(size);
+  PImage getFish() {
+    return fishes[fishnumber];
   }
 
-  void getColor() {
-    stroke(colors);
+  float getSize() {
+    if (fishnumber == 0) {
+      size = 0.4;
+    } else if (fishnumber == 1) {
+      size = 0.6;
+    } else if (fishnumber == 2) {
+      size = 0.6;
+    } else if (fishnumber == 3) {
+      size = 0.9;
+    }
+    return size;
+  }
+
+  float getSpeed() {
+    speed = random(5, 10);
+    return speed;
+  }
+
+  int getFishNumber() {
+    return fishnumber;
   }
 }
