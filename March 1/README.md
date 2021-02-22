@@ -20,4 +20,4 @@ Using this, I calculated the distance between the fishes and put if functions to
 
 ![](images/print.png)
 
-![alt-text](images/hit.gif)
+![alt-text](images/printhit.gif)
