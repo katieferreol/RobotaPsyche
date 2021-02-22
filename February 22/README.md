@@ -82,7 +82,7 @@ I was also thinking about using a PNG file of a fish, however remembering from p
 
 ### 5. Using 'Separate' and 'Apply Behavior' Function
 
-I'm not sure why, but my separate function doesn’t work! It gives me an error that "Type mismatch, "void" does not match with "processing.core.PVector"". Thinking that this was due to the function being a void instead of a PVector, I tried changing separate into a PVector instead of a void, but it didn't work either. It would give me "This method must return a result of type PVector". As a result, I also couldn't use the "Apply Vector" function.
+I'm not sure why, but my separate function doesn’t work! It gives me an error that "Type mismatch, "void" does not match with "processing.core.PVector"". Thinking that this was due to the function being a void instead of a PVector, I tried changing separate into a PVector instead of a void, but it didn't work either. It would give me "This method must return a result of type PVector". As a result, I also couldn't use the "Apply Behavior" function.
 
 ### 6. Making the Fishes Eat Each Other
 
