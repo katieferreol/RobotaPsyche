@@ -17,8 +17,9 @@ Reworking the code I had from before, I wanted to implement a behavior that make
 Originally for my benefit, I coded so that a burst animation would appear whenever two fish of the same species appear, and for blood to appear whenever two fishes of different species (on the hierarchy) would appear.
 
 ![](images/burst.png)
+![](images/blood.png)
 
-![alt-text](images/ocean burst.gif)
+![alt-text](images/oceanburst.gif)
 
 ## SETBACKS
 
