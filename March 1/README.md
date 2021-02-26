@@ -39,3 +39,6 @@ Sometimes, when fishes of the same species collide, it causes them to stop movin
 
 ![alt-text](images/burststuck.gif)
 
+### 3. No Reproduction
+
+Weirdly, when I printed the amount of fish in the ocean, the number of fish would increase very slowly compared to how many bursts I saw on the canvas. I am currently workingo n fixing this.
