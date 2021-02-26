@@ -10,6 +10,16 @@ Reworking the code I had from before, I wanted to implement a behavior that make
 
 ![](images/hierarchy.png)
 
+## NEW FEATURES
+
+### 1. Burst And Blood Collision Animation
+
+Originally for my benefit, I coded so that a burst animation would appear whenever two fish of the same species appear, and for blood to appear whenever two fishes of different species (on the hierarchy) would appear.
+
+![](images/burst.png)
+
+![alt-text](images/ocean burst.gif)
+
 ## SETBACKS
 
 ### 1. Collision Between Objects of the Same Class
@@ -21,3 +31,10 @@ Using this, I calculated the distance between the fishes and put if functions to
 ![](images/print.png)
 
 ![alt-text](images/printhit.gif)
+
+### 2. Fishes Getting Stuck
+
+Sometimes, when fishes of the same species collide, it causes them to stop moving, therefore making the burst animation stay. Unfortunately, I'm not sure how to fix this.
+
+![alt-text](images/burststuck.gif)
+
