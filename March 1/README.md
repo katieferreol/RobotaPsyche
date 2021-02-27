@@ -4,7 +4,7 @@ For this assignment, we were instructed to start implementing forms of DNA and b
 
 **DISCLAIMER:** This code took me more than 2 full school days to complete. The day I am finishing this now, I worked on this code for 13 straight hours and I'm *still* not fully proud of it.
 
-![alt-text](images/final.gif)
+![alt-text](images/ecosystem.gif)
 
 ## WHERE I LEFT OFF
 
@@ -24,6 +24,8 @@ Originally for my benefit, I coded so that a burst animation would appear whenev
 ![alt-text](images/oceanburst.gif)
 
 ### 2. Proper Reproduction Animation
+
+I was able to code it so that, only fishes of a specific species are able to reproduce a fish of that species, after I was able to overcome the reproduction obstacle I was in.
 
 ![alt-text](images/properReproduction.gif)
 
