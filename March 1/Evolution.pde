@@ -9,8 +9,10 @@ class Particle {
   float size;
   float speed;
   int fishnumber;
-  boolean hitsame;
-  boolean hitdiff;
+  boolean hit_same = false;
+  boolean hit_diff = false;
+  int hitsame;
+  int hitdiff;
   float appearx;
   float appeary;
   DNA dna;
@@ -21,7 +23,7 @@ class Particle {
     acceleration = new PVector(0, 0);
     velocity = new PVector(0, 0);
     location = new PVector(x, y);
-    maxSpeed = 10;
+    maxSpeed = 5;
     maxForce = 0.10;
     dna = new DNA();
     burst = loadImage("burst.png");
@@ -94,44 +96,52 @@ class Particle {
   }
 
   void separate (ArrayList<Particle> particles) {
-    //println(hitsame);
 
     for (Particle other : particles) {
       float d = PVector.dist(location, other.location);
-      if ((d > 0) && (d < 20)) {
+      if ((d > 0) && (d < 10)) {
         PVector diff = PVector.sub(location, other.location);
         if ((int(diff.x) < 0) && (abs(fishnumber - other.fishnumber) == 1)) {
-          hitdiff = true;
+          hitdiff = 1;
           appearx = location.x;
           appeary = location.y;
           image(blood, int(appearx), int(appeary)+30, 30, 30);
         } else {
-          hitdiff = false;
+          hitdiff = 0;
         }
-        if ((int(diff.x) < 20) && (int(diff.y) < 20) && (fishnumber - other.fishnumber == 0)) {
-          hitsame = true;
-          appearx = location.x;
-          appeary = location.y;
+        if ((int(diff.x) < 5) && (int(diff.x) > 1) && (fishnumber == other.fishnumber)) {
+          hit_same = true;
+          if (hit_same == true) {
+            hitsame = 1;
+            appearx = location.x;
+            appeary = location.y;
+            hit_same = false;
+          } else if (hit_same == false) {
+            hitsame = 0;
+          }
           image(burst, int(appearx), int(appeary), 70, 70);
-        } else {
-          hitsame = false;
         }
+      } else {
+        hit_same = false;
       }
     }
   }
-  
-  boolean getHitSame() {
+
+  int getHitSame() {
     return hitsame;
   }
-  
-  boolean getHitDiff() {
+
+  int getHitDiff() {
     return hitdiff;
   }
-  
+
   float getLocationX() {
     return appearx;
   }
   float getLocationY() {
     return appeary;
+  }
+  int getFishNumber() {
+    return fishnumber;
   }
 }
