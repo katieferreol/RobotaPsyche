@@ -14,11 +14,13 @@ PVector mouse;
 PVector center;
 PVector newmouse;
 
-boolean hitsame;
-boolean hitdiff;
+int hitsame;
+int hitdiff;
+int fishnumber;
 float locationx;
 float locationy;
-int fishesOcean = 20;
+int addnew;
+int decreasenew;
 
 void setup()
 {
@@ -29,43 +31,71 @@ void setup()
 
   particles = new ArrayList<Particle>();
 
-  for (int i = 0; i < fishesOcean; i++) {
+  for (int i = 0; i < 2; i++) {
     particles.add(new Particle(random(width), random(height)));
   }
+  
+ frameRate(60);
 }
 
 void mouseClicked() {
   particles.add(new Particle(mouseX, mouseY));
-  fishesOcean++;
 }
 
 void draw()
 {
   background(background);
 
-  println(fishesOcean);
-
   for (Particle p : particles) {
-    
+
     hitdiff = p.getHitDiff();
     hitsame = p.getHitSame();
-    locationx = p.getLocationX();
-    locationy = p.getLocationY();
-    
+    fishnumber = p.getFishNumber();
+
     p.getDNA();
     p.checkBorders();
     p.follow(f);
     p.update();
     p.show();
     p.separate(particles);
-  }
-  
-  if (hitsame == true) {
-      particles.add(new Particle(locationx, locationy));
-      fishesOcean++;
+
+    if ((hitsame == 1)) {
+      locationx = p.getLocationX();
+      locationy = p.getLocationY();
+      if (frameCount % 180 == 0) {
+      addnew = 1;
+      }
     }
-    
-  if (hitdiff == true) {
-    
+
+    if (hitdiff == 1) {
+      decreasenew = 1;
+    }
   }
+
+  
+  addNewFish();
+  decreaseFish();
+}
+
+void addNewFish() {
+  if (addnew == 1) {
+    //println("fishhasbeenadded");
+    particles.add(new Particle(locationx, locationy));
+    addnew = 2;
+  }
+
+  if (addnew == 2) {
+    addnew = 0;    
+  }
+  println(addnew);
+}
+
+void decreaseFish() {
+  if (decreasenew == 1) {
+    //particles.remove(10);
+    decreasenew = 2;
+  }
+  //if (decreasenew == 2) {
+  //  decreasenew = 0;    
+  //}
 }
