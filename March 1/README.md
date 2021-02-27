@@ -2,7 +2,8 @@
 
 For this assignment, we were instructed to start implementing forms of DNA and behaviors that will cause adding and subtracting of multiple vehicles. My code, though not doing implementing the behaviors I want yet, creates a lively sea of fish (different colors and sizes) moving in random directions. I want to code it so that, when a small fish comes in close contact with it predator, it will disappear, and when it comes close to a similar fish, will reproduce another fish of that species.
 
-**DISCLAIMER:** This code took me more than 2 full school days to complete. The day I am finishing this now, I worked on this code for 13 straight hours and I'm *still* not fully proud of it.
+### DISCLAIMER:
+This code took me more than 2 full school days to complete. The day I am finishing this now, I worked on this code for 13 STRAIGHT HOURS and I'm *still* not fully proud of it.
 
 ![alt-text](images/ecosystem.gif)
 
