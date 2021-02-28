@@ -26,15 +26,11 @@ void setup() {
   for (int i = 0; i < 30; i++) {
     vehicles.add(new Vehicle(random(600), random(400), int(random(0, 4))));
   }
-  //for (int i = 0; i < 10; i++) {
-  //  vehicles.add(new Vehicle(random(600), random(400), 2));
-  //}
 }
 
 //To make things easier for presentation if fishes aren't meeting
 void mousePressed() {
   vehicles.add(new Vehicle(mouseX, mouseY, int(random(0, 4))));
-  //vehicles.add(new Vehicle(mouseX, mouseY, 2));
 }
 
 void draw()
