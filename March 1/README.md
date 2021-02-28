@@ -74,7 +74,9 @@ Because I was having so many issues with my code and not knowing where it was co
 
 ### UPSIDE: Reproduction Based on Species! :)
 
-Because I was successful in properly reproducing the fishes, I was able to move on to my next problem, which was to reproduce the fish only of that spedies when they collided. Fortunately, I was able to do this, but it still wasn't super consistent. I printed the spawning area in different parts of the code, and it was consistent, which led me to several hours of trying to decode. Though I wasn't able to fix it, I was thinking of various reasons why this may be so.
+Because I was successful in properly reproducing the fishes, I was able to move on to my next problem, which was to reproduce the fish only of that spedies when they collided. Fortunately, I was able to do this, but it still wasn't super consistent.
+
+I printed the spawning area in different parts of the code, and it was consistent and printed with every collision, which led me to several hours of trying to decode. Though I wasn't able to fix it, I was thinking of various reasons why this may be so.
 
 The spawn area inside the enhanced loop:
 
