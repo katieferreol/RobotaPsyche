@@ -3,7 +3,7 @@
 For this assignment, we were instructed to start implementing forms of DNA and behaviors that will cause adding and subtracting of multiple vehicles. My code, though not doing implementing the behaviors I want yet, creates a lively sea of fish (different colors and sizes) moving in random directions. I want to code it so that, when a small fish comes in close contact with it predator, it will disappear, and when it comes close to a similar fish, will reproduce another fish of that species.
 
 ### DISCLAIMER:
-This code took me more than 2 full school days to complete. The day I am finishing this now, I worked on this code for 13 STRAIGHT HOURS and I'm *still* not fully proud of it.
+This code took me more than 2 full school days to complete. The day I am finishing this now, I worked on this code for **13 STRAIGHT HOURS** and I'm *still* not fully proud of it.
 
 ![alt-text](images/ecosystem.gif)
 
@@ -29,6 +29,12 @@ Originally for my benefit, I coded so that a burst animation would appear whenev
 I was able to code it so that, only fishes of a specific species are able to reproduce a fish of that species, after I was able to overcome the reproduction obstacle I was in.
 
 ![alt-text](images/properReproduction.gif)
+
+### 3. Shark Killing The Fish
+
+Because I no longer used the hierarchy due to my fear of it working inconsistenly like my reproduction code, I settled on creating a Shark class that, when the location of the fish was close to it, would kill (delete) the fish.
+
+![alt-text](images/shark.gif)
 
 ## SETBACKS
 
@@ -68,7 +74,22 @@ Because I was having so many issues with my code and not knowing where it was co
 
 ### UPSIDE: Reproduction Based on Species! :)
 
-Because I was successful in properly reproducing the fishes, I was able to move on to my next problem, which was to reproduce the fish only of that spedies when they collided. Fortunately, I was able to do this!
+Because I was successful in properly reproducing the fishes, I was able to move on to my next problem, which was to reproduce the fish only of that spedies when they collided. Fortunately, I was able to do this, but it still wasn't super consistent. I printed the spawning area in different parts of the code, and it was consistent, which led me to several hours of trying to decode. Though I wasn't able to fix it, I was thinking of various reasons why this may be so.
+
+The spawn area inside the enhanced loop:
+![alt-text](images/enhancedforloop.gif)
+
+The spawn area inside the vehicle class:
+![alt-text](images/vehicleclass.gif)
+
+The spawn area inside general draw:
+![alt-text](images/generaldraw.gif)
+
+The spawn area inside add function in draw:
+![alt-text](images/adddraw.gif)
+
+
+The reason that I think this is so is due to making it reproduce only when dividing the frame count by 100 will give me 0. I hypothesize that this may be due to **the collision of the fishes not matching up to the framecount division equalling 0.** Another reason I can think of is that, **because the collision doesn't last very long, the code doesn't recognize it.**
 
 ### DOWNSIDE: No More Eating Animation :(
 
