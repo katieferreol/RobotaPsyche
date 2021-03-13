@@ -57,12 +57,16 @@ When I was closely observing what was causing this, I realized that the add Vehi
         }
       }
 
+![alt-text](images/before.gif)
+
 Because of this, it would create numerous new vehicles even though I only wanted one. I solved this by creating a new For Loop that only added one Vehicle.
 
     for (int i = 0; i < 1; i++) {
         if (frameCount % 200 == 0) {
           vehicles.add(new Vehicle(random(50, 850), random(300, 550)));
         }
+        
+ ![alt-text](images/after.gif)
 
 This was an absolute winner for me, because I don't know what I would have done if I wasn't able to solve this!
 
