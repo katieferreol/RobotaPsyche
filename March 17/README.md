@@ -80,7 +80,10 @@ In the Duck file, I set a display function that would show the respective emotio
       } else {
         image(normalduck);
       }
-      
+  
+  ![alt-text](images/happy.gif)
+  ![alt-text](images/sad.gif)
+  
 In the main file, I coded it so that, when a specific vehicle was "eaten" by the duck, it would get the number of the trash (0-2 is trash, 3 is bread):
 
     if (v.isDead()) {
