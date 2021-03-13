@@ -43,20 +43,51 @@ When I created the function to make the trash and bread disappear when the duck 
 
 ![](images/ducks.jpg)
 
-## SETBACKS
+## SETBACKS IN CODE
 
 ### 1. Producing More Than One Piece of Trash
 
-I thought that, because the fishes were all from the same class, it would be difficult to figure out how to treat each object as an individual entity. However, from reworking some of Professor's code regarding the separate function, I found out that there is a certain syntax for() loop for this called "for (Particle other : particles)", which allows you to get values from another particle in the same class.
+Because I coded my project so that a random piece of trash would appear in the water every two seconds, this was a similar problem I had with my first fish project. Weirdly, I was able to debug this problem in my new project compared to the fish project, so I technically solved the problem on my first project!!! 
 
-Using this, I calculated the distance between the fishes and put if functions to determine if they should be eaten or not, such as if the difference between the two fish numbers is equal to 1 (indicating their one step above in the food chain) or equal to 0 (indicating they're the same species).
+When I was closely observing what was causing this, I realized that the add Vehicle function was inside a For Loop that added new vehicles in the number of the vehicle size!
 
-![](images/print.png)
+    for (int i = vehicles.size()-1; i>=0; i--) {
+    if (frameCount % 200 == 0) {
+          vehicles.add(new Vehicle(random(50, 850), random(300, 550)));
+        }
+      }
 
-![alt-text](images/printhit.gif)
+Because of this, it would create numerous new vehicles even though I only wanted one. I solved this by creating a new For Loop that only added one Vehicle.
+
+    for (int i = 0; i < 1; i++) {
+        if (frameCount % 200 == 0) {
+          vehicles.add(new Vehicle(random(50, 850), random(300, 550)));
+        }
+
+This was an absolute winner for me, because I don't know what I would have done if I wasn't able to solve this!
 
 ### 2. Changing State of Duck Depending On What It Eats
 
-Sometimes, when fishes of the same species collide, it causes them to stop moving, therefore making the burst animation stay. Unfortunately, I'm not sure how to fix this.
+Though changing the state/face of the duck depending on what it eats was a feature I wanted to add since the beginning of this project, I hesistated from doing it because it involved getting information from the Main file. However, it was less intimidating than what I expected.
 
-![alt-text](images/burststuck.gif)
+In the Duck file, I set a display function that would show the respective emotion depending on what the duck eats (simplified for the sake of the readme):
+
+    void display(int trashnumber) {
+      if (trashnumber == 0 || trashnumber == 1 || trashnumber == 2) {
+        image(sickduck);
+      } else if (trashnumber == 3) {
+        image(happyduck);
+      } else {
+        image(normalduck);
+      }
+      
+In the main file, I coded it so that, when a specific vehicle was "eaten" by the duck, it would get the number of the trash (0-2 is trash, 3 is bread):
+
+    if (v.isDead()) {
+          trashnumber = vehicles.get(i).trashnumber;
+          vehicles.remove(v);
+        }
+        
+In addition, in draw(), I applied the display() function from the Duck class and sent the trashnumber from the code above:
+
+    d.display(trashnumber);
