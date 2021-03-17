@@ -88,11 +88,6 @@ class Duck {
     }
     popMatrix();
   }
-  
-  //Duckling following the duck
-  void duckling() {
-    image(duckling, locx-130, locy+20, 60, 50);
-  }
 
   //Return x coordinate of loc
   float getlocx() {
