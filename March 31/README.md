@@ -1,5 +1,9 @@
 # READINGS
 
+Honestly, it was quite difficult thinking of more questions and topics for the readings, as it is very closely related to my presentation about preparing for a future with AI in the workforce.
+
+------------------------------------
+
 ## 1. Humans = Robots/AI
 In Levy's work, he points out how those of devout religions will possess the same beliefs of human emergence similar to a robot: we are created by a higher power. If this is what determins a conscious individual, how different are we than the robots we create? The first humans were also “made” by a programmer (in this case God), according to religious individuals: does this mean we do not exhibit consciousness as we were made by someone else?
 
