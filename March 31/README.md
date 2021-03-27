@@ -1,6 +1,6 @@
 # READINGS
 
-Honestly, it was quite difficult thinking of more questions and topics for the readings, as it is very closely related to my presentation about preparing for a future with AI in the workforce.
+Levy and Steinert's works revolve around the topic of ethics of machines and artificial intelligence, based on how we as humans perceive them. Levy takes on a more micro-approach to see how we as individuals perceive robots in relation to animals and other humans, and Steinert takes machine ethics in the macro-perspective of the workforce. Honestly, it was quite difficult thinking of more questions and topics for the readings, as it is very closely related to my presentation about preparing for a future with AI in the workforce, but they were interesting reads overall.
 
 ------------------------------------
 
