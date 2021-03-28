@@ -16,5 +16,8 @@ Is the reason we are still having the ongoing debates of robot ethics stirred by
 ## 4. Love & Friendships With Machines
 What would be the best way to implement emotions and ethics into a robot: through giving them already existing information or allow them to learn through their own experiences? In the case of forming relationships with individuals, would it be considered ethical to program emotions into robots if it leads to better relationships with them, such as a child loving a robot nanny more than their own parent? Are we even ready for the conversation of falling in love with a robot?
 
-## 5. Selfish Use of Robots & Meta-Stance 
+## 5. Machine Ethics Now
+What makes me so curious is why we as humans are already rushing to find the ethics behind machines who do not even possess the emotion and intellect of a human yet. As said by one of my friends when talking to him about this: "we are still light years away from this happening". This leads me to question: why now? We still haven't figured out all the problems of the human race, from racism, to mysogyny, to transphobia. Why is this such an important conversation to make *now*?
+
+## 6. Selfish Use of Robots & Meta-Stance 
 Seeing as we create machines to protect ourselves from human mistakes, is the argument about giving robots rights only stirred by our selfish need to protect ourselves from their possible deviancy from what they were programmed to do? If this is so, then what is the point of giving them emotions? Though we have constant debates about if we should treat robots with the same respect as we do with humans, won’t this disregard the purpose of why we made them in the first place? Wouldn’t moral decisions and emotions get in the way?
