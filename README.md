@@ -14,7 +14,7 @@ In Robota Psyche, we aim to develop a critical understanding of the historical a
 [Assignment 2](https://github.com/katieferreol/RobotaPsyche/tree/main/February%2015)
 
 [Assignment 3](https://github.com/katieferreol/RobotaPsyche/tree/main/February%2022)
-[& Assignment 4 (Joined)](https://github.com/katieferreol/RobotaPsyche/tree/main/March%201)
+& [Assignment 4 (Joined)](https://github.com/katieferreol/RobotaPsyche/tree/main/March%201)
 
 [Assignment 5](https://github.com/katieferreol/RobotaPsyche/tree/main/March%2017)
 
