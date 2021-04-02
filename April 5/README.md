@@ -35,5 +35,5 @@ Though the argument made by Gloria's mother in the story "Robbie" is unethical d
 ## 4. COLLISION OF DUTIES OF MACHINES
 In the story "Runaround", Donovan and Powell find out that the reason Speedy, their machine, wasn't returning was due to a conflict/collision of the rules he was programmed to follow. How precise do the rules given to the machines have to be to ensure that no such collision takes place? Is this inevitable?
 
-## 5. 
+## 5. EXCEPTIONS FOR DEVIANCY
 In what circumstances should a machine be able to deviate from their said duties for the sake of the safety of their owner or those around them? As an example, should a dog-walking robot save an elderly woman if it detects a speeding car on the road? Does adding these features for such circumstances increase the risk of deviancy, as it requires a tinge of human emotion?
