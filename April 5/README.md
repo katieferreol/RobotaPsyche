@@ -6,20 +6,37 @@ Finding the scalar projection of the angle was harder than what I thought it wou
 
 I first started off with the code Professor showed in class, and translated it into a non-static program to test it out. However, I did not understand the components of the code, so I decided to read the Nature of Code book, as well as watch its accompanying videos.
 
+![](images/professorclass.png)
+
 ## PROBLEMS
 
-Even when I understood everything going on, the red line (representing the scalar projection) was skewed to the right instead of on the black line. I did my best to correct this.
+### 1. SKEWED LINE
 
-## RESULT
+Even when I understood everything going on, the red line (representing the scalar projection) was skewed to the right instead of on the black line. I did my best to correct this by changing my coordinates to start on the edge of the screen instead. Interestingly, this solves the problem, which I infer came from the dot product. Because changing the coordinates to 0 made the lines collide with the canvas, I translated it accordingly for a cleaner look.
 
-Using the knowledge I gained from watching the videos and reading the book, I was able to create a working diagram similar to what Professor demonstrated in class! Here are is what it looks like as a non-static (setup and draw present) code, where  I also included in this week's directory:
+![](images/skew.png)
+![](images/coordinatechange.png)
+![](images/translate.png)
+
+### 2. INACCURATE ANGLE
+
+Using the knowledge I gained from watching the videos and reading the book, I was able to create a working diagram similar to what Professor demonstrated in class! Here are is what it looks like as a non-static (setup and draw present) code, where  I also included in this week's directory. Because I was also curious if it was as accurate as it looks, I attempted to print the angle between the red line (scalar projection) and the moving line. Though working, it was not as accurate as I would have liked. It did not show 0 when the red and black line intersect.
 
 ![alt-text](images/projection.gif)
-
-Because I was also curious if it was as accurate as it looks, I attempted to print the angle between the red line (scalar projection) and the moving line. Though working, it was not as accurate as I would have liked. It did not show 0 when the red and black line intersect.
-
 ![alt-text](images/degrees.gif)
 
+This was due to me getting inspiration from a code I did not understand. Once I was able to properely understand the code and also through changing the coordinates from problem 1, it showed a cleaner, more accurate project.
+
+### 3. ADD() OR SUB()?
+
+After looking at Professor's code and instructions once more, I decided to approach another method wherein V (the line between p1 and p3) will be taken by a PVector command instead of positioning it 45 degrees from line B. After working with it for a bit, I was confused as to why line V (green circle) was higher than the line of p3. Looking at other classmate's works, they all used the same command, which was sub().
+
+But I then realized that, subtraction makes the coordinate *smaller*, making the point of the circle higher on the Y coordinate. Instead, I opted to use the add() function instead, and it worked like how I wanted it to be.
+
+![](images/p3vconfusion.png)
+![](images/p3vfix.png)
+
+------------------------------
 
 # DISCUSSION QUESTIONS
 
