@@ -12,9 +12,12 @@ I first started off with the code Professor showed in class, and translated it i
 
 ### 1. SKEWED LINE
 
-Even when I understood everything going on, the red line (representing the scalar projection) was skewed to the right instead of on the black line. I did my best to correct this by changing my coordinates to start on the edge of the screen instead. Interestingly, this solves the problem, which I infer came from the dot product. Because changing the coordinates to 0 made the lines collide with the canvas, I translated it accordingly for a cleaner look.
+Even when I understood everything going on, the red line (representing the scalar projection) was skewed to the right instead of on the black line.
 
 ![](images/skew.png)
+
+I did my best to correct this by changing my coordinates to start on the edge of the screen instead. Interestingly, this solves the problem, which I infer came from the dot product. Because changing the coordinates to 0 made the lines collide with the canvas, I translated it accordingly for a cleaner look.
+
 ![](images/coordinatechange.png)
 ![](images/translate.png)
 
