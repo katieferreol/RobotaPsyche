@@ -1,17 +1,17 @@
-PVector p1 = new PVector(50, 20);
-PVector p2 = new PVector(50, 450);
-PVector p3 = new PVector (450, 20);
-PVector v = new PVector(mouseX, mouseY);
+size(500, 500);
 
-PVector p1v = PVector.sub(v, p1);
-PVector p1p2 = PVector.sub(p2, p1);
-p1p2.normalize(); // Normalize the line
-p1p2.mult(p1v.dot(p1p2));
+//initializing PVectors
+PVector p1, p2, p3, v;
+p1 = new PVector(0, 0);
+p2 = new PVector(0, 450);
+p3 = new PVector (450, 0);
+v = new PVector(p3.x/2, p2.y/2);
+
+PVector B = PVector.sub(p2, p1);
+B.normalize();
+PVector vm = B.mult(v.dot(B));
 
 //getting the degree of angle from origin
-float d = p1v.dot(p2);
-float theta = degrees(acos(d/(p1v.mag() * p2.mag())));
-println(theta);
-
-//return projection
-PVector vm = PVector.add(p1, p1p2);
+float d = v.dot(B);
+float theta = degrees(acos(d/(v.mag() * B.mag())));
+println(theta, vm);
