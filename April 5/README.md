@@ -14,12 +14,12 @@ I first started off with the code Professor showed in class, and translated it i
 
 Even when I understood everything going on, the red line (representing the scalar projection) was skewed to the right instead of on the black line.
 
-![](images/skew.png)
+![](images/skews.png)
 
 I did my best to correct this by changing my coordinates to start on the edge of the screen instead. Interestingly, this solves the problem, which I infer came from the dot product. Because changing the coordinates to 0 made the lines collide with the canvas, I translated it accordingly for a cleaner look.
 
-![](images/coordinatechange.png)
-![](images/translate.png)
+![](images/coordinateschange.png)
+![](images/translates.png)
 
 ### 2. INACCURATE ANGLE
 
@@ -36,8 +36,8 @@ After looking at Professor's code and instructions once more, I decided to appro
 
 But I then realized that, subtraction makes the coordinate *smaller*, making the point of the circle higher on the Y coordinate. Instead, I opted to use the add() function instead, and it worked like how I wanted it to be.
 
-![](images/p3vconfusion.png)
-![](images/p3vfix.png)
+![](images/p3vconfusions.png)
+![](images/p3vfixes.png)
 
 ------------------------------
 
