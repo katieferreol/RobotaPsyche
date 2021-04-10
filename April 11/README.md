@@ -28,21 +28,9 @@ I tried to fix this by changing to the Perlin Noise flow field from past project
 
 To be honest, I had no idea what we had to do after the code was given to us. I thought that Professor already implemented the code for us, because the avoidAggressive() seemed like it was fulfilling what he wanted us to do. However, after closely examining the code, I noticed an empty function called "avoidRedVehicles()", and I realized *that* was what he wanted us to fill up. 
 
-I did this by taking inspiration from the separate() function from past projects, and adding an if function for if the vehicle is red. The code for this function is below:
+I did this by taking inspiration from the separate() function from past projects, and adding an if function for if the vehicle is red. The code for this function is below (highly simplified):
 
     void avoidRedVehicles(ArrayList<Vehicle> vehicles) {
-        int count = 0;
-        PVector sum = new PVector(0, 0);
-        
-        for (Vehicle other : vehicles) {
-          float d = PVector.dist(location, other.location);
-          if (d == 0) {
-            continue;
-          }
-          if (d > tooClose) {
-            continue;
-          }
-
           // Is other vehicle red?
           boolean otherIsRed = other.getIsRed();
 
@@ -53,11 +41,6 @@ I did this by taking inspiration from the separate() function from past projects
             count++;
           }
         }
-        if (count > 0) {
-          sum.div(count);
-          applyForce(applyLimits(sum));
-        }
-      }
 
 ### 3. RECOGNIZING COLLISION ONCE
 
