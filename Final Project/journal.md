@@ -1,1 +1,3 @@
+# JOURNAL
 
+## APRIL 17
