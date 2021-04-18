@@ -8,7 +8,7 @@ Today was the first day I researched a topic for my final paper. Form the beginn
 
 However, after seeing the comments of their first music video, it is filled with negative comments, saying how their voices and inhuman movements made them uncomfortable. Personally, I also felt the same thing. But what phenomena make us feel this way?
 
-**Will I change my project?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
 
 ---------------------------------------
 
@@ -24,7 +24,7 @@ In addition, I also wanted to bring into my essay the dangers of such artificial
 
 I want to show how artificial intelligence can be both beneficial and detrimental to humans and how it is our role on how it will be introduced.
 
-**Will I change my project?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
 
 ---------------------------------------
 
@@ -35,13 +35,13 @@ Another benefit that I had thought of for AI taking over the entertainment indus
 ![](images/codemiko.jpg)
 ![](images/lilmiquela.jpg)
 
-**Will I change my project?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
 
 ---------------------------------------
 
 ## APRIL 19: LACK OF EMOTION?
 Today, I began researching for scholarly articles that list the benefits and drawbacks of . What I was able to think of is the lack of emotion that AI is currently unable to replicate. Whether it be through their facial expressions or the tone in their voices, celebrity-to-fan interaction is something they may not be able to do. Reading articles, they seem to supoprt my point.
 
-**Will I change my project?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
 
 ---------------------------------------
