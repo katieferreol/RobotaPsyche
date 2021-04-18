@@ -10,6 +10,8 @@ However, after seeing the comments of their first music video, it is filled with
 
 **Will I change my project?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
 
+---------------------------------------
+
 ## APRIL 17: HUMANS' ROLE IN AI SAFETY
 
 After seeing the negative reactions from others regarding the AI "human-looking" girl group Eternity, I wanted to find reasons as to why this is so. Delving deeper into research, I found the reason behind this is due to the psychological phenomenon called the "uncanny valley" effect, wherein a human feels a discomfort when seeing somethig that looks almost--but not entirely––human.
@@ -24,6 +26,8 @@ I want to show how artificial intelligence can be both beneficial and detrimenta
 
 **Will I change my project?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
 
+---------------------------------------
+
 ## APRIL 18: BEAUTY STANDARDS
 
 Another benefit that I had thought of for AI taking over the entertainment industry is our ability to have more flexible beauty standards. Women constantly compare themselves to Instagram models due to their lavish lifestyle and airbrushed beauty. However, the rise of AI influencers and streamers may put an end to the unrealistic beauty standards faced by humans. An example of these is Twitch V-tuber Code Miko, and AI Instagram star Lil' Miquela.
@@ -33,4 +37,11 @@ Another benefit that I had thought of for AI taking over the entertainment indus
 
 **Will I change my project?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
 
-## APRIL 19
+---------------------------------------
+
+## APRIL 19: LACK OF EMOTION?
+Today, I began researching for scholarly articles that list the benefits and drawbacks of . What I was able to think of is the lack of emotion that AI is currently unable to replicate. Whether it be through their facial expressions or the tone in their voices, celebrity-to-fan interaction is something they may not be able to do. Reading articles, they seem to supoprt my point.
+
+**Will I change my project?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+
+---------------------------------------
