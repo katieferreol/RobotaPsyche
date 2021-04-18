@@ -39,9 +39,14 @@ Another benefit that I had thought of for AI taking over the entertainment indus
 
 ---------------------------------------
 
-## APRIL 19: LACK OF EMOTION?
-Today, I began researching for scholarly articles that list the benefits and drawbacks of . What I was able to think of is the lack of emotion that AI is currently unable to replicate. Whether it be through their facial expressions or the tone in their voices, celebrity-to-fan interaction is something they may not be able to do. Reading articles, they seem to supoprt my point.
+## APRIL 19: PROJECT CHANGE?
 
-**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+![](images/cats.png)
+
+![](images/people.png)
+
+![](images/wearingblack.png)
+
+![](images/evilblackcat.png)
 
 ---------------------------------------
