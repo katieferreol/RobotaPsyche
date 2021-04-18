@@ -48,8 +48,7 @@ I have decided to change my project to be a code instead of a final paper. I tho
 
 Because of the myth of the "black cat bringing bad luck", I decided to change the antagonist from the orange to the black cat. To follow, I made more people assets that will initially be wearing black clothing but, when they realize it causes cats to flee from them, will change to more colorful clothes.
 
-![](images/wearingblacc.png)
-
-![](images/evilblackcats.png)
+![](images/wearingblack.png)
+![](images/evilblackcat.png)
 
 ---------------------------------------
