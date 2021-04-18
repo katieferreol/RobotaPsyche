@@ -42,14 +42,14 @@ Another benefit that I had thought of for AI taking over the entertainment indus
 ## APRIL 19: PROJECT CHANGE?
 
 I have decided to change my project to be a code instead of a final paper. I thought that, because I took this class to learn more complex Processing, that is what I will do. Building off my intial idea from last week, I began to look for assets for my project. Below are the cats and people that are the main subjects of the code.
-![](images/cats.png)
+![](images/catz.png)
 
 ![](images/people.png)
 
 Because of the myth of the "black cat bringing bad luck", I decided to change the antagonist from the orange to the black cat. To follow, I made more people assets that will initially be wearing black clothing but, when they realize it causes cats to flee from them, will change to more colorful clothes.
 
-![](images/wearingblack.png)
+![](images/wearingblacc.png)
 
-![](images/evilblackcat.png)
+![](images/evilblackcats.png)
 
 ---------------------------------------
