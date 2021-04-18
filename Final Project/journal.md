@@ -2,7 +2,7 @@
 
 ## APRIL 14
 
-![](images/eternity.jpg)
+![](images/eternitykpop.jpg)
 
 
 ![](images/deepfake.jpg)
