@@ -35,15 +35,18 @@ Another benefit that I had thought of for AI taking over the entertainment indus
 ![](images/codemiko.jpg)
 ![](images/lilmiquela.jpg)
 
-**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+**WILL I CHANGE MY PROJECT?** To be honest, I am wary of how much more of my voice I can contribute to the ongoing conversation about AI. Though very interesting, I feel like I have put all of my thoughts in our past discussions and presentations. I may want to change my project.
 
 ---------------------------------------
 
 ## APRIL 19: PROJECT CHANGE?
 
+I have decided to change my project to be a code instead of a final paper. I thought that, because I took this class to learn more complex Processing, that is what I will do. Building off my intial idea from last week, I began to look for assets for my project. Below are the cats and people that are the main subjects of the code.
 ![](images/cats.png)
 
 ![](images/people.png)
+
+Because of the myth of the "black cat bringing bad luck", I decided to change the antagonist from the orange to the black cat. To follow, I made more people assets that will initially be wearing black clothing but, when they realize it causes cats to flee from them, will change to more colorful clothes.
 
 ![](images/wearingblack.png)
 
