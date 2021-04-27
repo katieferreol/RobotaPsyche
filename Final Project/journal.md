@@ -51,4 +51,44 @@ Because of the myth of the "black cat bringing bad luck", I decided to change th
 ![](images/wearingblack.png)
 ![](images/evilblackcat.png)
 
+**WILL I CHANGE MY PROJECT?** Looking at the time I have left for this project, I do not think I can finish both in time, so I may have to choose one or the other.
+
+---------------------------------------
+
+## APRIL 21: PROJECT CHANGE (AGAIN)
+
+Deciding the timeline of doing both projects to be too difficult, I decided to switch back to doing the paper. Because I already had a topic that I wanted to write about, I began searching for scholarly articles and real life examples of AI in popular media to prove the points I am making in my essay.
+
+**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+
+---------------------------------------
+
+## APRIL 22: CONCEPT OF KAYFABE
+
+One of the points I make in my essay was how virtual influencers would allow comparisons and insecurities in humans to decrease. However, one would think that, due to the ability to control the features and proportions of the avatars, this would cause insecurities to increase, disproving my claim entirely. However, when reading through articles, I found the concept of a kayfabe.
+
+![](images/kayfabe.jpg)
+
+Starting out in professional wrestling, the concept talks about how we perceive certain forms of entertainment as real, even though we know that they aren't--purely for the sake of business or enjoyment. This ties in with having virtual influencers on social media platforms instead: they fulfill the content creation most humans crave, yet is "artificial" enough for humans to be aware not to compare themselves with--they are virtual, after all!
+
+**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+
+---------------------------------------
+
+## APRIL 24: BRAIN AND PERCEPTION
+
+While I was scrolling on TikTok, I watched a video about a psychology student learning about the medial prefontal cortex, which is a part of the brain that is able to detect a human or an object. Noticing this could tie in very well with my paper, I began to research more on this part of the brain and see if a brain detects human-like machines as humans or robots.
+
+![](images/brain.png)
+
+**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+
+---------------------------------------
+
+## APRIL 26: ADDING PHOTOS
+
+Today, I began to add photos into my essay and cite the links I referenced. Because some of my links are articles rather than scholarly papers (meaning I couldn't exactly cite the page number in the inline citation), I figured it would look more cohesive if I used APA rather than the normal MLA format. Because of this, I spent some time changing my links from MLA to APA. Thank you Professor for allowing both!
+
+**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+
 ---------------------------------------
