@@ -1,4 +1,4 @@
-# FINAL PAPER
+# ROBOTA PSYCHE FINAL PAPER
 
 ## TITLE
 Artificial Intelligence In Mass Media: Virtual Influencers And Their Role In Human Entertainment
