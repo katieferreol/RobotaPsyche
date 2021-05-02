@@ -1,7 +1,7 @@
 ## FINAL PAPER
 
-The discussions we have been having in class has gotten me very curious about the role in robots/artificial intelligence on the future of humans. I currently believe that technology is humans' best friend and worst enemy. I would like to write a paper about how robots and machines are currently portrayed in popular media (movies, TV shows, etc.) and where such thinking came about. 
+### ABSTRACT
+This past decade has proved to be a historical time in the development of technology for both practical and entertainment purposes. However, with the rise of social media and the immortality of the world wide web, the price of the entertainment industry may be doing more harm than good in terms of mental wellbeing. Through observing the curation of virtual influencers and robotic supermodels, we begin to see the prominence of machines in such a field, and––through the process––determine the psychological bonds we create with those we see on our screens, whether human or robotic.
 
-I also want to delve into the possible benefits and dangers of having AI take over the entertainment industry, delving into the concept of the "uncanny valley effect", or the discomfort we feel when something unhuman is on the brink of looking human. 
-
-Nowadays, there has been a rise of "deepfake", wherein a celebrity's face is put on the body of another human. This has been used mostly for sexual and pornographic purposes, a disgusting cost of fame. This may cause scars of trauma amongst those whose face was used without their consent. However, if AI begins to slowly replace the entertainment industry, this could remove this fear.
+### PARTS
+This paper is divided into four sections. The first section will delve into the current models of Artificial Intelligence and robotics in the entertainment industry. The second and third sections will cite its benefits and drawbacks, specifically the ability to bring safety to those in the limelight and the dangers of exploitation. The fourth section will determine if humans are able to accept such drastic changes in the entertainment industry, and the psychological reasons and biases preventing us from doing so.
