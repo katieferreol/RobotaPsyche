@@ -120,6 +120,8 @@ Today, I realized that most of the examples I list in my final paper are only ar
 
 While thinking about a final conclusion for the paper, I began to read some of the reactions regarding the introduction of these technologies to the entertainment industry. Though some were in awe, most were in uneasiness and disdain towards these innovative technologies. Realizing this may be due to the uncanny valley effect and inability of machines to convey realistic emotions yet, I chose to discuss about humans' bias for humanlike behaviors and how that may deter innovation.
 
+![](images/comments.jpg)
+
 **WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
 
 ---------------------------------------
