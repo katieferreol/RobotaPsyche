@@ -1,5 +1,8 @@
 # FINAL PAPER
 
+## TITLE
+Artificial Intelligence In Mass Media: Virtual Influencers And Their Role In Human Entertainment
+
 ## ABSTRACT
 This past decade has proved to be a historical time in the development of technology for both practical and entertainment purposes. However, with the rise of social media and the immortality of the world wide web, the price of the entertainment industry may be doing more harm than good in terms of mental wellbeing. Through observing the curation of virtual influencers and robotic supermodels, we begin to see the prominence of machines in such a field, and––through the process––determine the psychological bonds we create with those we see on our screens, whether human or robotic.
 
