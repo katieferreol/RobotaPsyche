@@ -1,7 +1,7 @@
 # JOURNAL
 
 ## SHORTCUTS
-[Day 1](journal.md#day-1), [Day 2](journal.md#day-2), [Day 3](journal.md#day-3), [Day 4](journal.md#day-4), [Day 5](journal.md#day-5), [Day 6](journal.md#day-6), [Day 7](journal.md#day-7), [Day 8](journal.md#day-8), [Day 9](journal.md#day-9), [Day 10](journal.md#day-10)
+[Day 1](journal.md#day-1), [Day 2](journal.md#day-2), [Day 3](journal.md#day-3), [Day 4](journal.md#day-4), [Day 5](journal.md#day-5), [Day 6](journal.md#day-6), [Day 7](journal.md#day-7), [Day 8](journal.md#day-8), [Day 9](journal.md#day-9), [Day 10](journal.md#day-10), [Day 11](journal.md#day-11)
 
 ##### day-1
 ## DAY 1: APRIL 14 (AI In Entertainment)
@@ -99,6 +99,37 @@ While I was scrolling on TikTok, I watched a video about a psychology student le
 ## DAY 8: APRIL 26 (Photos and References)
 
 Today, I began to add photos into my essay and cite the links I referenced. Because some of my links are articles rather than scholarly papers (meaning I couldn't exactly cite the page number in the inline citation), I figured it would look more cohesive if I used APA rather than the normal MLA format. Because of this, I spent some time changing my links from MLA to APA. Thank you Professor for allowing both!
+
+**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+
+---------------------------------------
+
+##### day-9
+## DAY 9: APRIL 28 (Introducing Miimi)
+
+Today, I realized that most of the examples I list in my final paper are only artificial intelligence/CGI, and I would like to incorporate physical machines in the entertainment industry as well. This is where I was introduced to Miimi, who was a 2009 runway model in Japan made at the National Institute of Advanced Industrial Science and Technology. It was very interesting to see a half-humanlike, half-robot machine.
+
+![](images/miimi.jpg)
+
+**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+
+---------------------------------------
+
+##### day-10
+## DAY 10: MAY 1 (Human Bias and Its Negative Effects)
+
+While thinking about a final conclusion for the paper, I began to read some of the reactions regarding the introduction of these technologies to the entertainment industry. Though some were in awe, most were in uneasiness and disdain towards these innovative technologies. Realizing this may be due to the uncanny valley effect and inability of machines to convey realistic emotions yet, I chose to discuss about humans' bias for humanlike behaviors and how that may deter innovation.
+
+**WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
+
+---------------------------------------
+
+##### day-11
+## DAY 11: MAY 2 (Finishing Up)
+
+My final day! I finished up the essay. Because I spent most of my days researching and writing, I realized that I did not spend that much time formatting it to match the APA style I chose for my references. I forgot that, in addition to the references, there are also certain rules for the header, title page, inline citation, justification, and others.
+
+After reformatting it to correctly show the APA style, it was very ugly!! Honestly, I think it would make me want to read the essay less. But at least it's formatted correctly!
 
 **WILL I CHANGE MY PROJECT?** Because I am enjoying researching the current trends of artificial intelligence in the entertainment industry, I do not want to change my project.
 
